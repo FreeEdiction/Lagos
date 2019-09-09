@@ -19,6 +19,7 @@ public class Model
     public void Initialize()
     {
         GameObject poolModel = GameObject.Instantiate(pool);
+        poolModel.name = "Model";
         poolModel.GetComponent<MeshRenderer>().material = material;
         poolModel.transform.position = position;
     }

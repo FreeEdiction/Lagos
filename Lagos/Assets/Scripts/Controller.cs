@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
-    private GameObject prefab;
-    private Material material;
-    private Vector3 position;
+    public GameObject prefab;
+    public Material material;
+    public Vector3 position;
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,5 @@ public class Controller : MonoBehaviour
             Model model = new Model(prefab, material, position);
             model.Initialize();
         }
-
     }
 }
